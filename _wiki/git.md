@@ -18,57 +18,67 @@ title: Git
 
 ### Create or Clone a Repository
 
-- **`git status`**
-- `git init`
-- `git clone LINK`
+- Check the repository's status
+  - **`git status`**
+- Initial a local repository
+  - `git init NAME`
+- Clone a remote repository to local (default branch: *master*, default remote name: *origin*)
+  - `git clone URL`
 
 ### Review a Repository's History
 
-- `git log`
-  - `--oneline`
-  - `--graph`
-  - `--all`
-  - `-p` or `--patch`
-  - `-w`
-  - `--stat`
-  - `--decorate`
-- `git show SHA`
+- List all commits
+  - `git log`
+    - `--oneline`
+    - `--graph`
+    - `--all`
+    - `-p` or `--patch`
+    - `--stat`
+- List specific commit
+  - `git show SHA`
 
 ### Add Commits to a Repository
 
-- `git add FILE1 FILE2`
-  - `git add .`
-- `git commit`
-  - `git commit -m MESSAGE`
-- `git diff`
+- Add
+  - Add files to staging area
+    - `git add FILE1 FILE2`
+  - Add all changed files to staging area
+    - `git add .`
+- Commit
+  - Record changes in staging area to the repository
+    - `git commit`
+  - Use the given message as the commit message
+    - `git commit -m MESSAGE`
+- Diff
+  - `git diff`
 
-  ```bash
-  Working Directory    <----+--------+-------+
-          |                 |        |       |
-          |              diff HEAD   |       |
-          V                 |        |       |
-      "git add"             |        |       |
-          |                 |        |     diff
-          |                 |        |       |
-          V                 |        |       |
-        Index    <----+-----|--------|-------+
-          |           |     |        |
-          |   diff --cached |        |
-          V           |     |        |
-    "git commit"      |     |        |
-          |           |     |        |
-          |           |     |        |
-          V           |     |        |
-        HEAD     <----+-----+        |
-          |                          |
-          |                       diff HEAD^
-          V                          |
-  previous "git commit"              |
-          |                          |
-          |                          |
-          V                          |
-        HEAD^          <-------------+
-  ```
+```bash
+Working Directory      <------+-------+-------+
+        |                     |       |       |
+        |                     |       |       |
+        V                     |       |       |
+    "git add"                 |       |     diff
+        |                     |       |       |
+        |                     |       |       |
+        V                     |       |       |
+      Index      <----+-------|-------|-------+
+        |             |   diff HEAD   |
+        |             |       |       |
+        V             |       |       |
+  "git commit"  diff --cached |   diff HEAD^
+        |             |       |       |
+        |             |       |       |
+        V             |       |       |
+      HEAD       <----+-------+       |
+        |                             |
+        |                             |
+        V                             |
+previous "git commit"                 |
+        |                             |
+        |                             |
+        V                             |
+      HEAD^            <--------------+
+```
 
 ### Good Commit Messages
 
@@ -76,32 +86,42 @@ title: Git
 - Explain **why** in the body
 - No **how**
 
-### Tagging, Branching and Merging
+### Tag, Branch and Merge
 
-- `git tag`
-  - `git tag TAG`
-  - `git tag -a TAG` or `git tag --annotate TAG`
-  - `git tag -d TAG`
-- `git branch`
-  - `git branch BRANCH`
-  - `git branch -d BRANCH`
-  - `git checkout BRANCH/TAG/SHA`
-  - `git checkout -b BRANCH`
-- `git merge BRANCH/TAG/SHA`
-- Merge Conflicts
+- Tag
+  - Create tag
+    - `git tag TAG`
+  - Create tag with annotation
+    - `git tag -a TAG` or `git tag --annotate TAG`
+  - Delete tag
+    - `git tag -d TAG`
+- Branch
+  - Create branch
+    - `git branch BRANCH`
+  - Delete branch
+    - `git branch -d BRANCH`
+  - Switch branch or restore workign tree files
+    - `git checkout BRANCH/TAG/SHA`
+  - Create a branch and switch to it
+    - `git checkout -b BRANCH`
+- Merge
+  - `git merge BRANCH/TAG/SHA`
 
 ### Undoing Changes
 
 - Relative Commit References
   - `^` indicates the parent commit
   - `~` indicates the first parent commit
-- `git commit --amend`
-- `git revert SHA`
-- `git reset SHA`
-  - `--mixed`
-  - `--soft`
-  - `---hard`
-  - [Video](https://s3.cn-north-1.amazonaws.com.cn/u-vid-hd/UN7ki2G2yKc.mp4)
+- Replace the tip of the current branch by creating a new commit
+  - `git commit --amend`
+- Revert a existing commit
+  - `git revert SHA`
+- Reset current HEAD to the specified state
+  - `git reset SHA`
+    - `--mixed`
+    - `--soft`
+    - `---hard`
+    - [Video](https://s3.cn-north-1.amazonaws.com.cn/u-vid-hd/UN7ki2G2yKc.mp4)
 
 ## Git Collaboration
 
@@ -109,24 +129,28 @@ title: Git
 
 ![Remote Repository](https://s3.cn-north-1.amazonaws.com.cn/u-img/fbbde604-5978-4814-b3ab-872d82dcfa30)
 
-- `git remote`
-  - `-v`
-  - `add REMOTE URL`
-  - `rename OLD NEW`
-  - `remove REMOTE`
-- `git branch -u REMOTE/BRANCH`
-- `git push REMOTE BRANCH`
-- `git fetch REMOTE BRANCH`
-- `git pull REMOTE BRANCH` = `git fetch` + `git merge`
+- Remote
+  - `git remote`
+    - `-v`
+    - `add REMOTE URL`
+    - `rename OLD NEW`
+    - `remove REMOTE`
+- Update remote refs along with associated objects
+  - `git push`
+- Download objects and refs from another repository
+  - `git fetch`
+- Fetch from and integrate with another repository or a local branch
+  - `git pull` = `git fetch` + `git merge`
 
 ### Working On Another Developer's Repository
 
 - Fork repository
-- `git short log`
-  - `-s`
-  - `-n`
-  - `--author=NAME`
-  - `--grep=REGEX`
+- Summarize 'git log' output
+  - `git shortlog`
+    - `-s`
+    - `-n`
+    - `--author=NAME`
+    - `--grep=REGEX`
 
 ### Staying In Sync With A Remote Repository
 
@@ -134,7 +158,8 @@ title: Git
 - Stay in sync with source project
   - origin
   - upstream
-- `git rebase -i BASE`
+- Reapply commits on top of another base tip
+  - `git rebase -i BASE`
 
 ## References
 
