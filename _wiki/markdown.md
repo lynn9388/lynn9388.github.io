@@ -162,13 +162,21 @@ title: Markdown
 
 ### Emoji
 
-GitHub supports emoji!
-:+1: :sparkles: :camel: :tada:
-:rocket: :metal: :octocat:
+```markdown
+:+1: :sparkles: :camel: :tada: :rocket: :metal: :octocat:
+```
+
+:+1: :sparkles: :camel: :tada: :rocket: :metal: :octocat:
 
 > [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 
 ### Footnotes
+
+```markdown
+This is a text with footnote[^1].
+
+[^1]: Here is the footnote 1 definition.
+```
 
 This is a text with footnote[^1].
 
@@ -176,9 +184,11 @@ This is a text with footnote[^1].
 
 ### MathJax
 
-When $$(a \ne 0)$$, there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
+```markdown
+$$E = mc^2$$
+````
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$E = mc^2$$
 
 ## References
 
