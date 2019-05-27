@@ -6,6 +6,13 @@ title: Markdown
 
 [Visual Studio Code](https://code.visualstudio.com/)
 
+### Extensions
+
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+- [Markdown yaml Preamble](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-yaml-preamble)
+
 ## Syntax
 
 ### Headers
@@ -138,7 +145,7 @@ title: Markdown
 
 - Anchor Link
 
-  ```
+  ```markdown
   [Syntax](#Syntax)
   ```
 
@@ -160,16 +167,6 @@ title: Markdown
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-### Emoji
-
-```markdown
-:+1: :sparkles: :camel: :tada: :rocket: :metal: :octocat:
-```
-
-:+1: :sparkles: :camel: :tada: :rocket: :metal: :octocat:
-
-> [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
-
 ### Footnotes
 
 ```markdown
@@ -186,7 +183,7 @@ This is a text with footnote[^1].
 
 ```markdown
 $$E = mc^2$$
-````
+```
 
 $$E = mc^2$$
 
