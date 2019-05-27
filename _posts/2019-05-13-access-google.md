@@ -48,6 +48,7 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
 
 1. Download the local client [here](https://github.com/onplus/shadowsocks-heroku/releases) based on your computers operating system
 1. Config `config.json` based on your server's settings, below is a example
+
     ```json
     {
     "server": "lynn-example.herokuapp.com",
@@ -64,10 +65,11 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
 ### Config Proxy
 
 As you can see in `config.json`, the proxy configuration is pretty clear which should be configured in other apps as below
-- Protocol: SOCKS5
-- IP: 127.0.0.1
+
+- Protocol: `SOCKS5`
+- IP: `127.0.0.1`
   - same as `local_address` in config.json
-- Port: 1080
+- Port: `1080`
   - same as `local_port` in config.json
 
 Most time, I only need proxy for chrome browser, and I recommend [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) to manage the proxy.
