@@ -7,6 +7,8 @@ categories: jekyll
 
 If you are a blog user, you can follow [usage instruction](#Usage) to build your blog. Moreover, you can check [here](#Customization) to see how to customize it to meet your style.
 
+{% include youtube.html id="gUZpjXwbqvM" %}
+
 ## Usage
 
 When you use Light Blog as a remote theme, you don't need to know what's inside and how it works.
@@ -44,7 +46,7 @@ To create a blog with this theme, just follow these steps:
 
 1. [Optional] Add `favicon.ico` to the root directory of the repository if you want to change the blog's icon showed in browser's tab.
 
-1. [Optional] As a convention, you should also add `LICENSE` and `README.me`.
+1. [Optional] As a convention, you should also add `LICENSE` and `README.md`.
 
 That's all. Your blog is done and ready to be published as a GitHub Pages. Now, the blog may look like
 
