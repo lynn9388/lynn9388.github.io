@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Light Blog
-categories: jekyll
+tags: jekyll
 ---
 
 [Light Blog](https://github.com/lynn9388/light-blog) is intended to be a [remote theme](https://github.blog/2017-11-29-use-any-theme-with-github-pages/) for your personal site or blog in GitHub Pages, and it's quit easy to use. That means you don't need to folk it and then delete posts not belongs to you, but copy several files and change some settings. What's the best is you don't need to struggle on update your blog's theme anymore.
@@ -8,6 +8,8 @@ categories: jekyll
 If you are a blog user, you can follow [usage instruction](#Usage) to build your blog. Moreover, you can check [here](#Customization) to see how to customize it to meet your style.
 
 {% include youtube.html id="gUZpjXwbqvM" %}
+
+> The files displayed in the video may be changed in the future, if the files are different from the instructions below, please refer to the following instructions.
 
 ## Usage
 
@@ -34,8 +36,12 @@ To create a blog with this theme, just follow these steps:
     | |-wiki.html
     | |-404.html
     | |-about.md
-    | |-categories.html
+    | |-archive.html
     ```
+
+    > `archive.html` is renamed from `categories.html`, which is changed from [this](https://github.com/lynn9388/light-blog/commit/d0f7f564090afd4e5ee30226a6446fb410eb8333) commit.
+    >
+    > The `categories` variable in your post's [front matter](https://jekyllrb.com/docs/front-matter/) should also be replaced with "tags",
 
     You may also want to copy `.gitignore` to ignore temporary Jekyll files.
 
@@ -63,7 +69,7 @@ lynn9388.github.io/
 | |-wiki.html
 | |-404.html
 | |-about.md
-| |-categories.html
+| |-archive.html
 ```
 
 ### Publish Blog
@@ -98,7 +104,7 @@ lynn9388.github.io/
 | |-wiki.html
 | |-404.html
 | |-about.md
-| |-categories.html
+| |-archive.html
 ```
 
 ## Customization
@@ -115,14 +121,14 @@ light-blog/
 | |-head.html                     # <head> tag for default layout
 | |-footer.html                   # Footer for default layout
 | |-modules                       # All reusable modules
-| | |-category-list-group.html    # List categories with post number in a list
+| | |-tag-list-group.html         # List tags with post number in a list
 | | |-pagination.html             # Pagination for post list
 | | |-wiki-list.html              # List all wiki posts
 | | |-search-box.html             # Search box
 | | |-toc.html                    # Table of contents
 | | |-post-list.html              # List posts based on pagination
 | | |-google-analytics.html       # * Google Analytics
-| | |-category-list.html          # List all categories with posts
+| | |-tag-list.html               # List all tags with posts
 | | |-comments.html               # Comments based on GitHub issues
 | | |-repository-list.html        # List some of your repositories
 | |-sidebar.html                  # Sidebar on the right
@@ -143,7 +149,7 @@ light-blog/
 | |-wiki.html                     # Wiki page shows wiki list
 | |-404.html                      # 404 page
 | |-about.md                      # About page introduces the site
-| |-categories.html               # Categories page shows category list
+| |-archive.html                  # Archive page shows tag list
 ```
 
 To modify theses theme files, just make a copy of the file that you want to customize and place it in your site's directory with the same path showed above. For details, please check the [Jekyll doc](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) to see how to override theme defaults.
