@@ -41,7 +41,7 @@ To create a blog with this theme, just follow these steps:
 
     > `archive.html` is renamed from `categories.html`, which is changed from [this](https://github.com/lynn9388/light-blog/commit/d0f7f564090afd4e5ee30226a6446fb410eb8333) commit.
     >
-    > The `categories` variable in your post's [front matter](https://jekyllrb.com/docs/front-matter/) should also be replaced with "tags",
+    > For users who use the `categories.html`, please follow [this](https://github.com/lynn9388/lynn9388.github.io/commit/67df386aff6d5c0adc62b6ac11a4a2e2e3810862) commit to update your site.
 
     You may also want to copy `.gitignore` to ignore temporary Jekyll files.
 
