@@ -15,13 +15,13 @@ The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redire
 
 After installing the app, you need a new hosts file to update the original one. I use [hosts-ipv6](https://github.com/googlehosts/hosts-ipv6) where the hosts file is [here](https://github.com/googlehosts/hosts-ipv6/blob/master/hosts-files/hosts), but what you need to do is copy the URL of the raw file (`https://raw.githubusercontent.com/googlehosts/hosts-ipv6/master/hosts-files/hosts`) and apply it as a remote hosts, then enable it.
 
-![Switch Hosts](https://raw.githubusercontent.com/lynn9388/lynn9388.github.io/master/assets/img/post/switch-hosts.png)
+![Switch Hosts](/assets/images/switch-hosts.png)
 
 ### Connect to IPv6 Network
 
 As I'm studying in HUST where the network in the lab and dormitory all provide IPv6, it's quite simple to do, just connect to the network and check if computer's network adapter get an IPv6 address in network settings, or visit [test-ipv6](https://test-ipv6.com/) to see if IPv6 is accessible.
 
-![Test IPv6](https://raw.githubusercontent.com/lynn9388/lynn9388.github.io/master/assets/img/post/test-ipv6.png)
+![Test IPv6](/assets/images/test-ipv6.png)
 
 ### Visit Google
 
