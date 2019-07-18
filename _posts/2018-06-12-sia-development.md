@@ -208,11 +208,11 @@ dev:
 
 一个节点加入网络时，需要手动指定要进行连接的 Sia 实例，然后该节点可从所连接的节点获得网络中其他节点的信息，并与其他节点建立连接
 
-由于不使用硬编码的 Bootstrap 节点，所以集群中的 *Node 0* 节点可优先启动，承担 Bootstrap 的功能，并作为新节点加入网络和新节点获取网络中其他节点信息的入口；新节点在[启动后台服务进程](#启动后台服务进程（Sia-实例）)时，**需要设置 `--no-bootstrap` 参数**，并在[加入网络](#加入网络)时，将 *Node 0* 作为连接的对象，最终形成 P2P 网络
+由于不使用硬编码的 Bootstrap 节点，所以集群中的 *Node 0* 节点可优先启动，承担 Bootstrap 的功能，并作为新节点加入网络和新节点获取网络中其他节点信息的入口；新节点在[启动后台服务进程](#启动后台服务进程sia-实例)时，**需要设置 `--no-bootstrap` 参数**，并在[加入网络](#加入网络)时，将 *Node 0* 作为连接的对象，最终形成 P2P 网络
 
 #### 设置运行环境
 
-1. 创建用于构建集群的虚拟机，[配置各虚拟机的 IP](#Ubuntu-Server-配置静态-IP)
+1. 创建用于构建集群的虚拟机，[配置各虚拟机的 IP](#ubuntu-server-配置静态-ip)
 1. 创建保存节点数据的文件夹
 1. 将[编译](#编译源码)的 `dev` 版 *siad* 和 *siac* 上传到各虚拟机 （可使用 [scp](https://linux.die.net/man/1/scp) 命令）
 
@@ -506,7 +506,7 @@ Miner 节点通过挖矿获得 Siacoin，并向 Host 和 Renter 节点进行[转
 
 ##### 转账 Miner -> Host
 
-Miner 节点将[挖矿](#挖矿-Miner)获得的 Siacoin 转给 Host 节点，Host 节点将获得的 Siacoin 作为抵押，用于提供共享存储服务
+Miner 节点将[挖矿](#挖矿-miner)获得的 Siacoin 转给 Host 节点，Host 节点将获得的 Siacoin 作为抵押，用于提供共享存储服务
 
 1. Host 节点[创建账户地址](#创建账户地址)
 1. Miner 节点通过 `./siac wallet send siacoins [amount] [dest]` 向 Host节点发送 Siacoin

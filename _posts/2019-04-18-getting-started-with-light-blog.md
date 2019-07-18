@@ -5,7 +5,7 @@ tags: jekyll
 
 [Light Blog](https://github.com/lynn9388/light-blog) is intended to be a [remote theme](https://github.blog/2017-11-29-use-any-theme-with-github-pages/) for your personal site or blog in GitHub Pages, and it's quit easy to use. That means you don't need to folk it and then delete posts not belongs to you, but copy several files and change some settings. What's the best is you don't need to struggle on update your blog's theme anymore.
 
-If you are a blog user, you can follow [usage instruction](#Usage) to build your blog. Moreover, you can check [here](#Customization) to see how to customize it to meet your style.
+If you are a blog user, you can follow [usage instruction](#usage) to build your blog. Moreover, you can check [here](#customization) to see how to customize it to meet your style.
 
 {% include youtube.html id="gUZpjXwbqvM" %}
 
