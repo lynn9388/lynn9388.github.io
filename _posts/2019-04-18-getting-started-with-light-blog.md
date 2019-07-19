@@ -94,7 +94,7 @@ lynn9388.github.io/
 | |-2019-04-16-welcome-to-light-blog.md
 | |-(MORE POST HERE)
 |-_wiki
-| |-markdown.md
+| |-git.md
 | |-(MORE WIKI HERE)
 |-README.md
 |-.gitignore
@@ -153,3 +153,7 @@ light-blog/
 ```
 
 To modify theses theme files, just make a copy of the file that you want to customize and place it in your site's directory with the same path showed above. For details, please check the [Jekyll doc](https://jekyllrb.com/docs/themes/#overriding-theme-defaults) to see how to override theme defaults.
+
+## Read More
+
+- [Writing with Light Blog]({% post_url 2019-07-19-writing-with-light-blog %})
