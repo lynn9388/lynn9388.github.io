@@ -156,4 +156,4 @@ To modify theses theme files, just make a copy of the file that you want to cust
 
 ## Read More
 
-- [Writing with Light Blog]({% post_url 2019-07-19-writing-with-light-blog %})
+- [Writing with Light Blog]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %})

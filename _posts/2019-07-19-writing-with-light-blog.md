@@ -3,7 +3,7 @@ title: Writing with Light Blog
 tags: [jekyll, markdown]
 ---
 
-In "[Getting Started with Light Blog]({% post_url 2019-04-18-getting-started-with-light-blog %})", I have presented how to build a new blog with [Light Blog](https://github.com/lynn9388/light-blog). The next step is how to write a post for it.
+In "[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %})", I have presented how to build a new blog with [Light Blog](https://github.com/lynn9388/light-blog). The next step is how to write a post for it.
 
 ## Chose an Editor
 
@@ -207,20 +207,26 @@ We use [Linguist](http://https://github.com/github/linguist) to perform language
   > [Linking to posts](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
 
   ```markdown
-  {% raw %}[Getting Started with Light Blog]({% post_url 2019-04-18-getting-started-with-light-blog %}){% endraw %}
+  {% raw %}[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}){% endraw %}
   ```
 
-  [Getting Started with Light Blog]({% post_url 2019-04-18-getting-started-with-light-blog %})
+  [Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %})
+
+  `site.baseurl` is required before GitHub Pages' [Jekyll dependency version](https://pages.github.com/versions/) updates to `v4.0`.
+
+  > Since v4.0 you don’t need to prepend link tags with site.baseurl
+  >
+  > [Jekyll Links](https://jekyllrb.com/docs/liquid/tags/#links)
 
 - Anchor Links for Another Post
 
   If you want to link a specific place in another post, just combine anchor links and post links showed above. There is a simple example:
 
   ```markdown
-  {% raw %}[Usage of Light Blog]({% post_url 2019-04-18-getting-started-with-light-blog %}#usage){% endraw %}
+  {% raw %}[Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage){% endraw %}
   ```
 
-  [Usage of Light Blog]({% post_url 2019-04-18-getting-started-with-light-blog %}#usage)
+  [Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage)
 
 #### Text Formatting
 
@@ -259,10 +265,10 @@ The image syntax is very similar to hyperlinks, except that there is an exclamat
 If you want to embed images of yourself, just put your images in `/assets/images/` folder, and reference it like this:
 
 ```markdown
-![Stones on the beach](/assets/images/stones-on-the-beach.jpeg)
+![Stones on the beach]({{ site.baseurl }}/assets/images/stones-on-the-beach.jpeg)
 ```
 
-![Stones on the beach](/assets/images/stones-on-the-beach.jpeg)
+![Stones on the beach]({{ site.baseurl }}/assets/images/stones-on-the-beach.jpeg)
 
 #### YouTube Videos
 
