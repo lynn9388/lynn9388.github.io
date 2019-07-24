@@ -10,12 +10,12 @@ tags: [blockchain, tutorial]
 ### 开发平台
 
 - 最基本开发要求
-  - 获取完整 [Sia](https://github.com/NebulousLabs/Sia) 源码
-  - 能对源码进行编辑
-  - 配置 [Go](https://golang.org/) 语言开发环境
+    - 获取完整 [Sia](https://github.com/NebulousLabs/Sia) 源码
+    - 能对源码进行编辑
+    - 配置 [Go](https://golang.org/) 语言开发环境
 - 建议开发环境
-  - 操作系统：[Ubuntu Desktop 18.04](https://www.ubuntu.com/download/desktop?)
-  - 集成开发环境：[GoLand](https://www.jetbrains.com/go/https://www.jetbrains.com/go/)（可通过 [Toolbox App](https://www.jetbrains.com/toolbox/app/) 安装，账户可通过华科邮箱[注册](https://www.jetbrains.com/shop/eform/students)，获得完整版本）
+    - 操作系统：[Ubuntu Desktop 18.04](https://www.ubuntu.com/download/desktop?)
+    - 集成开发环境：[GoLand](https://www.jetbrains.com/go/https://www.jetbrains.com/go/)（可通过 [Toolbox App](https://www.jetbrains.com/toolbox/app/) 安装，账户可通过华科邮箱[注册](https://www.jetbrains.com/shop/eform/students)，获得完整版本）
 
 #### Ubuntu Desktop 配置 Go 开发环境
 
@@ -92,13 +92,13 @@ Sia 源码可生成 *siad* 和 *siac* 两个可执行二进制文件，在使用
 ### 测试平台
 
 - 最基本测试要求
-  - 任意 Go 语言支持的操作系统
-  - 一台主机
+    - 任意 Go 语言支持的操作系统
+    - 一台主机
 - 建议测试环境
-  - 虚拟化平台：[VMware Workstation Pro 14](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
-  - 虚拟机操作系统：[Ubuntu Server 18.04](https://www.ubuntu.com/download/server) （无需安装 Go）
-  - 虚拟机配置：1GB 内存、8GB 存储
-  - 多台虚拟主机组成的集群
+    - 虚拟化平台：[VMware Workstation Pro 14](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
+    - 虚拟机操作系统：[Ubuntu Server 18.04](https://www.ubuntu.com/download/server) （无需安装 Go）
+    - 虚拟机配置：1GB 内存、8GB 存储
+    - 多台虚拟主机组成的集群
 
 #### Ubuntu Server 配置静态 IP
 
@@ -586,7 +586,7 @@ Host 节点通过设置共享存储路径和大小，向网络宣布共享存储
     >
     > 1. 在内网测试中，执行 `./siac host announce` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) Announce() error` 方法，由于 `h.settings.NetAddress` 和 `h.autoAddress` 均返回 `""`，所以不会执行 `h.managedAnnounce(annAddr)`，无法完成宣布过程（不会报错)
     >
-    > 2. 在内网测试中，使用官方提供的源码直接编译的版本，执行 `./siac host announce [address]` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) AnnounceAddress(addr modules.NetAddress) error` 方法，由于测试时提供的是内网地址，执行判断语句 `if addr.IsLocal()` 时无法通过，所以需要注释相关语句，然后通过修改后的源码重新[编译 *siad*](#编译源码)，并上传到相应 Host 节点后，执行 `./siac host announce [address]`
+    > 1. 在内网测试中，使用官方提供的源码直接编译的版本，执行 `./siac host announce [address]` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) AnnounceAddress(addr modules.NetAddress) error` 方法，由于测试时提供的是内网地址，执行判断语句 `if addr.IsLocal()` 时无法通过，所以需要注释相关语句，然后通过修改后的源码重新[编译 *siad*](#编译源码)，并上传到相应 Host 节点后，执行 `./siac host announce [address]`
     >
     >     ```go
     >     //if addr.IsLocal() {

@@ -36,13 +36,13 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
 1. Create a free Heroku account [here](https://signup.heroku.com/) if you don't have one.
 1. Deploy server [here](https://heroku.com/deploy?template=https://github.com/onplus/shadowsocks-heroku/tree/re), an example is set as below
     - App name: `lynn-example`
-      - any valid name is ok
+        - any valid name is ok
     - Choose a region: `United States`
-      - `Europe` is also fine, you can deploy multiple servers with different region then compare the speed
+        - `Europe` is also fine, you can deploy multiple servers with different region then compare the speed
     - KEY: `PASSWORD`
-      - set your own private password to access server
+        - set your own private password to access server
     - METHOD: `aes-256-cfb`
-      - the default algorithm is ok, and more supported ciphers can be checked [here](https://github.com/mrluanma/shadowsocks-heroku#supported-ciphers)
+        - the default algorithm is ok, and more supported ciphers can be checked [here](https://github.com/mrluanma/shadowsocks-heroku#supported-ciphers)
 
 ### Config Local Client
 
@@ -68,9 +68,9 @@ As you can see in `config.json`, the proxy configuration is pretty clear which s
 
 - Protocol: `SOCKS5`
 - IP: `127.0.0.1`
-  - same as `local_address` in config.json
+    - same as `local_address` in config.json
 - Port: `1080`
-  - same as `local_port` in config.json
+    - same as `local_port` in config.json
 
 Most time, I only need proxy for chrome browser, and I recommend [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) to manage the proxy.
 

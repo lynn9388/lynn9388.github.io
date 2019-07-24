@@ -70,39 +70,39 @@ You may not use `# H1` in your post, because the `title` variable in front matte
 
 - Unordered
 
-  ```markdown
-  - Red
-  - Green
-  - Blue
-  ```
+    ```markdown
+    - Red
+    - Green
+    - Blue
+    ```
 
-  - Red
-  - Green
-  - Blue
+    - Red
+    - Green
+    - Blue
 
 - Ordered
 
-  ```markdown
-  1. Red
-  1. Green
-  1. Blue
-  ```
+    ```markdown
+    1. Red
+    1. Green
+    1. Blue
+    ```
 
-  1. Red
-  1. Green
-  1. Blue
+    1. Red
+    1. Green
+    1. Blue
 
 - Task
 
-  ```markdown
-  - [x] Task 1
-  - [ ] Task 2
-  - [ ] Task 3
-  ```
+    ```markdown
+    - [x] Task 1
+    - [ ] Task 2
+    - [ ] Task 3
+    ```
 
-  - [x] Task 1
-  - [ ] Task 2
-  - [ ] Task 3
+    - [x] Task 1
+    - [ ] Task 2
+    - [ ] Task 3
 
 #### Code Blocks
 
@@ -182,51 +182,51 @@ We use [Linguist](http://https://github.com/github/linguist) to perform language
 
 - Hyperlinks
 
-  ```markdown
-  [Lynn's Blog](https://lynn9388.github.io)
-  ```
+    ```markdown
+    [Lynn's Blog](https://lynn9388.github.io)
+    ```
 
-  [Lynn's Blog](https://lynn9388.github.io)
+    [Lynn's Blog](https://lynn9388.github.io)
 
 - Anchor Links
 
-  An anchor link is a link on a page that brings you to a specific place on that page.
+    An anchor link is a link on a page that brings you to a specific place on that page.
 
-  ```markdown
-  [Span Elements](#span-elements)
-  ```
+    ```markdown
+    [Span Elements](#span-elements)
+    ```
 
-  [Span Elements](#span-elements)
+    [Span Elements](#span-elements)
 
-  Note that the link must be a lowercase header, even if the original header contains uppercase letters. If the header contains multiple words, they must be connected by `-`. If your header contains complex symbols, you should pre-generate the HTML page from Markdown and see what the `id` attribute of that header with your browser's [web developer tools](https://en.wikipedia.org/wiki/Web_development_tools).
+    Note that the link must be a lowercase header, even if the original header contains uppercase letters. If the header contains multiple words, they must be connected by `-`. If your header contains complex symbols, you should pre-generate the HTML page from Markdown and see what the `id` attribute of that header with your browser's [web developer tools](https://en.wikipedia.org/wiki/Web_development_tools).
 
 - Post Links
 
-  > If you want to include a link to a post on your site, the `post_url` tag will generate the correct permalink URL for the post you specify.
-  >
-  > [Linking to posts](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
+    > If you want to include a link to a post on your site, the `post_url` tag will generate the correct permalink URL for the post you specify.
+    >
+    > [Linking to posts](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
 
-  ```markdown
-  {% raw %}[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}){% endraw %}
-  ```
+    ```markdown
+    {% raw %}[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}){% endraw %}
+    ```
 
-  [Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %})
+    [Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %})
 
-  `site.baseurl` is required before GitHub Pages' [Jekyll dependency version](https://pages.github.com/versions/) updates to `v4.0`.
+    `site.baseurl` is required before GitHub Pages' [Jekyll dependency version](https://pages.github.com/versions/) updates to `v4.0`.
 
-  > Since v4.0 you don’t need to prepend link tags with site.baseurl
-  >
-  > [Jekyll Links](https://jekyllrb.com/docs/liquid/tags/#links)
+    > Since v4.0 you don’t need to prepend link tags with site.baseurl
+    >
+    > [Jekyll Links](https://jekyllrb.com/docs/liquid/tags/#links)
 
 - Anchor Links for Another Post
 
-  If you want to link a specific place in another post, just combine anchor links and post links showed above. There is a simple example:
+    If you want to link a specific place in another post, just combine anchor links and post links showed above. There is a simple example:
 
-  ```markdown
-  {% raw %}[Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage){% endraw %}
-  ```
+    ```markdown
+    {% raw %}[Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage){% endraw %}
+    ```
 
-  [Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage)
+    [Usage of Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %}#usage)
 
 #### Text Formatting
 
