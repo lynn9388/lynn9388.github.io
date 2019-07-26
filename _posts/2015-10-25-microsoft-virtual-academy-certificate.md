@@ -5,4 +5,4 @@ tags: study
 
 After two months of studying and a month waiting, I finally received my certification of MVA. I am quite excited about that. At the beginning of 2016, I need to study harder and achieve more :-)
 
-![Microsoft virtual academy certification]({{ site.baseurl }}/assets/images/microsoft-virtual-academy-certification.png)
+![Microsoft virtual academy certification]({{ site.baseurl }}/assets/images/Microsoft virtual academy certification.png)

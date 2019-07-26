@@ -265,10 +265,10 @@ The image syntax is very similar to hyperlinks, except that there is an exclamat
 If you want to embed images of yourself, just put your images in `/assets/images/` folder, and reference it like this:
 
 ```markdown
-![Stones on the beach]({{ site.baseurl }}/assets/images/stones-on-the-beach.jpeg)
+{% raw %}![Stones on the beach]({{ site.baseurl }}/assets/images/Stones on the beach.jpeg){% endraw %}
 ```
 
-![Stones on the beach]({{ site.baseurl }}/assets/images/stones-on-the-beach.jpeg)
+![Stones on the beach]({{ site.baseurl }}/assets/images/Stones on the beach.jpeg)
 
 #### YouTube Videos
 

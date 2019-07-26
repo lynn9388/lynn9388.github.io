@@ -1,6 +1,6 @@
 ---
 title: Sia Development
-tags: [blockchain, tutorial]
+tags: blockchain
 ---
 
 > Sia is the leading decentralized cloud storage platform. No signups, no servers, no trusted third parties. Sia leverages blockchain technology to create a data storage marketplace that is more robust and more affordable than traditional cloud storage providers.

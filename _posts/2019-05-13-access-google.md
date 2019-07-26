@@ -1,6 +1,6 @@
 ---
 title: Access Google
-tags: [network, tutorial]
+tags: network
 ---
 
 Google services are blocked in China which is very inconvenient for researchers. In this post, I will introduce two methods that I used to access Google.
@@ -15,13 +15,13 @@ The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redire
 
 After installing the app, you need a new hosts file to update the original one. I use [hosts-ipv6](https://github.com/googlehosts/hosts-ipv6) where the hosts file is [here](https://github.com/googlehosts/hosts-ipv6/blob/master/hosts-files/hosts), but what you need to do is copy the URL of the raw file (`https://raw.githubusercontent.com/googlehosts/hosts-ipv6/master/hosts-files/hosts`) and apply it as a remote hosts, then enable it.
 
-![Add remote hosts in SwitchHosts!]({{ site.baseurl }}/assets/images/add-remote-hosts-in-switchhosts.png)
+![Add remote hosts in SwitchHosts!]({{ site.baseurl }}/assets/images/Add remote hosts in SwitchHosts!.png)
 
 ### Connect to IPv6 Network
 
 As I'm studying in HUST where the network in the lab and dormitory all provide IPv6, it's quite simple to do, just connect to the network and check if computer's network adapter get an IPv6 address in network settings, or visit [test-ipv6](https://test-ipv6.com/) to see if IPv6 is accessible.
 
-![Result of IPv6 connectivity test]({{ site.baseurl }}/assets/images/result-of-ipv6-connectivity-test.png)
+![Result of IPv6 connectivity test]({{ site.baseurl }}/assets/images/Result of IPv6 connectivity test.png)
 
 ### Visit Google
 
