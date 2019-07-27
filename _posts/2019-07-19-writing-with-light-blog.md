@@ -9,6 +9,10 @@ In "[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-g
 
 The post in website based on Jekyll is typically written with Markdown, which is just a lightweight markup language with plain text formatting syntax. That means you can write it with any text editor like [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com), and [Atom](https://atom.io), but I recommend [Visual Studio Code](https://code.visualstudio.com/) (aka VSCode).
 
+> I have switched to [Sublime Text]({{ site.baseurl }}{% post_url 2019-07-27-set-up-sublime-text-for-markdown-and-jekyll %}).
+>
+> Update on 2019-07-26
+
 ### Extensions
 
 The main reason I recommend VSCode is to have an active community that develops a number of extensions to extend its capabilities. Here are some of the extensions I used for Markdown.
