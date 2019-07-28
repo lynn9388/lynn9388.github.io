@@ -45,10 +45,9 @@ To create a blog with this theme, just follow these steps:
 
     You may also want to copy `.gitignore` to ignore temporary Jekyll files.
 
-1. Update `Gemfile` and `_config.yml` with your own settings. The most important settings are
+1. Update `_config.yml` with your own settings. The most important settings are
 
-    - Comment `gemspec` and uncomment `gem "github-pages", group: :jekyll_plugins` in `Gemfile`
-    - Uncomment `remote_theme: lynn9388/light-blog` in `_config.yml`
+    - Uncomment `remote_theme: lynn9388/light-blog`
 
 1. [Optional] Add `favicon.ico` to the root directory of the repository if you want to change the blog's icon showed in browser's tab.
 
