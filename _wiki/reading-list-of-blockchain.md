@@ -1,37 +1,20 @@
 ---
 title: Reading List of Blockchain
-sections:
-  conference:
-    filter: "@inproceedings"
-    title: Conference Papers
-  journal:
-    filter: "@article"
-    title: Journal Articles
-  book:
-    filter: "@book"
-    title: Books
-  other:
-    filter: "@misc|@phdthesis|@mastersthesis|@bachelorsthesis|@techreport"
-    title: Other Publications
 ---
 
 The following are some related papers on blockchain, which can be used as a reading list for getting started. I recommend reading the early papers and choosing the papers you are interested in after you have a basic understanding of blockchain technology. Good luck!🤓
 
 <!-- Support for BibTex https://github.com/pcooksey/bibtex-js -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@5ccf967e3afb0e319b14b12a6e3a442be932bf0a/src/bibtex_js.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@863770d0496801a026d25c29fb789734ba0a5ca9/src/bibtex_js.js"></script>
 
 <bibtex src="{{ site.baseurl }}/assets/bibtex/reading-list-of-blockchain.bib"></bibtex>
 
 <div class="bibtex_structure">
-    <div class="sections bibtextypekey">
-        {% for section in page.sections %}
-            <div class="section {{ section[1].filter }}">
-                <h2>{{ section[1].title }}</h2>
-                <div class="sort year" extra="DESC number">
-                    <div class="templates"></div>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="group year" extra="DESC number">
+        <div class="sort journal" extra="DESC string">
+          <h2 class="title"></h2>
+          <div class="templates"></div>
+        </div>
     </div>
 </div>
 
@@ -82,6 +65,8 @@ The following are some related papers on blockchain, which can be used as a read
 
 <script>
     $(window).on("load", function () {
-       tocbot.refresh();
+        anchors.remove("h2");
+        anchors.add("h2");
+        tocbot.refresh();
     });
 </script>
