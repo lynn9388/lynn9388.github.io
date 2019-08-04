@@ -5,7 +5,7 @@ title: Reading List of Blockchain
 The following are some related papers on blockchain, which can be used as a reading list for getting started. I recommend reading the early papers and choosing the papers you are interested in after you have a basic understanding of blockchain technology. Good luck!🤓
 
 <!-- Support for BibTex https://github.com/pcooksey/bibtex-js -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@863770d0496801a026d25c29fb789734ba0a5ca9/src/bibtex_js.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@a8026168951beef519cd771672c0dc09e6603cc9/src/bibtex_js.js"></script>
 
 <bibtex src="{{ site.baseurl }}/assets/bibtex/reading-list-of-blockchain.bib"></bibtex>
 
@@ -32,7 +32,7 @@ The following are some related papers on blockchain, which can be used as a read
     }
 </style>
 
-<div class="bibtex_display">
+<div class="bibtex_display" callback="refresh()">
     <div class="bibtex_template">
         <ul><li>
             <div class="if url">
@@ -64,9 +64,9 @@ The following are some related papers on blockchain, which can be used as a read
 </div>
 
 <script>
-    $(window).on("load", function () {
+    function refresh() {
         anchors.remove("h2");
         anchors.add("h2");
         tocbot.refresh();
-    });
+    }
 </script>
