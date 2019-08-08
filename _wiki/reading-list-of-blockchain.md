@@ -23,11 +23,11 @@ The following are some related papers on blockchain, which can be used as a read
         font-family: "Times New Roman", Times, serif;
     }
 
-    .title {
+    span.title {
         font-weight: bold;
     }
 
-    .booktitle, .journal {
+    span.booktitle, span.journal {
         font-style: italic;
     }
 </style>
