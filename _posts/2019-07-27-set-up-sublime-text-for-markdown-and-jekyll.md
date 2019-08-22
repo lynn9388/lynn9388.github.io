@@ -1,5 +1,5 @@
 ---
-title: Set up Sublime Text for Markdown and Jekyll
+title: Set Up Sublime Text for Markdown and Jekyll
 tags: [markdown, jekyll]
 ---
 
