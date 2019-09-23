@@ -7,13 +7,15 @@ Google services are blocked in China which is very inconvenient for researchers.
 
 ## Access Google with IPv6 and Hosts
 
+> This method seems not longer working, but you can still use the [second method](#access-google-with-shadowsocks-and-heroku).
+
 The [CERNET](http://www.edu.cn/) in school provides the IPv6 service, which can be used to access most of Google products without any proxy or VPN. In this way, you just need to redirect the HTTP/HTTPS requests to the IPv6 address of the original website with a `hosts` file. Follow is what I do to access Google.
 
 ### Update Hosts File
 
-The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redirect website access with an IP address. The file location is different between different operating systems. You can copy and paste new hosts file to replace it directly, but I recommend to use an app to manage it, like [SwitchHosts](https://github.com/oldj/SwitchHosts) which provides a user-friendly GUI. Based on your computer's operating system, you can download an install binary in its [here](https://github.com/oldj/SwitchHosts/releases).
+The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redirect website access with an IP address. The file location is different between different operating systems. You can copy and paste new hosts file to replace it directly, but I recommend to use an application to manage it, like [SwitchHosts](https://github.com/oldj/SwitchHosts) which provides a user-friendly GUI. Based on your computer's operating system, you can download an install binary in its [here](https://github.com/oldj/SwitchHosts/releases).
 
-After installing the app, you need a new hosts file to update the original one. I use [hosts-ipv6](https://github.com/googlehosts/hosts-ipv6) where the hosts file is [here](https://github.com/googlehosts/hosts-ipv6/blob/master/hosts-files/hosts), but what you need to do is copy the URL of the raw file (`https://raw.githubusercontent.com/googlehosts/hosts-ipv6/master/hosts-files/hosts`) and apply it as a remote hosts, then enable it.
+After installing the application, you need a new hosts file to update the original one. I use [hosts-ipv6](https://github.com/googlehosts/hosts-ipv6) where the hosts file is [here](https://github.com/googlehosts/hosts-ipv6/blob/master/hosts-files/hosts), but what you need to do is copy the URL of the raw file (`https://raw.githubusercontent.com/googlehosts/hosts-ipv6/master/hosts-files/hosts`) and apply it as a remote hosts, then enable it.
 
 ![Add remote hosts in SwitchHosts!]({{ site.baseurl }}/assets/images/Add remote hosts in SwitchHosts!.png)
 
@@ -44,36 +46,38 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
     - METHOD: `aes-256-cfb`
         - the default algorithm is ok, and more supported ciphers can be checked [here](https://github.com/mrluanma/shadowsocks-heroku#supported-ciphers)
 
-### Config Local Client
+### Configure Local Client
 
-1. Download the local client [here](https://github.com/onplus/shadowsocks-heroku/releases) based on your computers operating system
-1. Config `config.json` based on your server's settings, below is a example
+1. Download the local client [here](https://github.com/onplus/shadowsocks-heroku/releases) based on your computer's operating system.
+1. Configure `config.json` based on your server's settings, below is a example
 
     ```json
     {
-    "server": "lynn-example.herokuapp.com",
-    "local_address": "127.0.0.1",
-    "scheme": "ws",
-    "local_port": "1080",
-    "remote_port": "80",
-    "password": "PASSWORD",
-    "timeout": 600,
-    "method": "aes-256-cfb"
+        "server": "lynn-example.herokuapp.com",
+        "local_address": "127.0.0.1",
+        "scheme": "ws",
+        "local_port": "1090",
+        "remote_port": "80",
+        "password": "PASSWORD",
+        "timeout": 600,
+        "method": "aes-256-cfb"
     }
     ```
 
-### Config Proxy
+### Launch Local Client
 
-As you can see in `config.json`, the proxy configuration is pretty clear which should be configured in other apps as below
+After finishing the above steps, you need to launch the local client when you want to access Google. I always keep it running in the background after I launch it, because it's pretty small and doesn't consume too many resources.
+
+### Configure Proxy
+
+It's time to configure proxy for the applications. As you can see in `config.json`, the proxy configuration is pretty clear which should be configured in other applications as below
 
 - Protocol: `SOCKS5`
 - IP: `127.0.0.1`
     - same as `local_address` in config.json
-- Port: `1080`
+- Port: `1090`
     - same as `local_port` in config.json
 
-Most time, I only need proxy for chrome browser, and I recommend [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) to manage the proxy.
+Most time, I only need proxy for Google Chrome, and I recommend [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega) to manage the proxy.
 
-### Launch Local Client
-
-After finishing the above steps, you only need to launch the local client when you want to access Google.
+> If the application does not provide proxy settings, you may need to set up a [global proxy]({{ site.baseurl }}{% post_url 2019-09-23-switch-global-proxy-quickly %}).
