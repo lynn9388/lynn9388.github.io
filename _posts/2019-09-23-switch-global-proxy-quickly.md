@@ -72,6 +72,16 @@ glider -listen ss://CHACHA20-IETF:PASSWORD@:8388 -forward socks5://127.0.0.1:109
 
 ![Convert Socks5 to Shadowsocks with glider]({{ site.baseurl }}/assets/images/Convert Socks5 to Shadowsocks with glider.png)
 
+But you can also create a batch file (named as `start.bat`) next to the `glider.exe`, just run that file when you want to launch `glider`, without having to manually enter the command each time.
+
+```bat
+@ECHO OFF
+CLS
+COLOR 0A
+
+glider -listen ss://CHACHA20-IETF:PASSWORD@:8388 -forward socks5://127.0.0.1:1090 -verbose
+```
+
 ### Configure Shadowsocks for Windows
 
 The last thing before you start the global proxy is to add the Shadowsocks proxy server provided by `glider` to `Shadowsocks for Windows`. You need to right click on the icon after launching `Shadowsocks for Windows`, then click `Servers -> Edit Servers...`
