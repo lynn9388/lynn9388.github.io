@@ -1,6 +1,6 @@
 ---
 title: Create a Lite Windows 10
-tags: windows
+tags: Windows
 ---
 
 Since I usually use macOS, in some specific situations, such as using the full version of the Office, I need to temporarily use the Windows. My solution is to use a Windows virtual machine, but the image is one of the most simplified version.

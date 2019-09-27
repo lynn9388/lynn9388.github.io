@@ -1,6 +1,6 @@
 ---
 title: Upgrade of Keep Grade – KG.11 🎉
-tags: running
+tags: Running
 ---
 
 From 5 kilometers, 10 kilometers, to the half marathon, after 237 days I finally upgraded to the KG.11 on August 18, which is very exciting for me, and I look forward to the arrival of KG.12.

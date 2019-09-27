@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Light Blog
-tags: jekyll
+tags: Jekyll
 ---
 
 [Light Blog](https://github.com/lynn9388/light-blog) is intended to be a [remote theme](https://github.blog/2017-11-29-use-any-theme-with-github-pages/) for your personal site or blog in GitHub Pages, and it's quit easy to use. That means you don't need to folk it and then delete posts not belongs to you, but copy several files and change some settings. What's the best is you don't need to struggle on update your blog's theme anymore.
@@ -132,7 +132,7 @@ light-blog/
 | | |-repository-list.html        # List some of your repositories
 | |-sidebar.html                  # Sidebar on the right
 | |-header.html                   # Header for every page on the top
-| |-title-bar.html                # Title bar for every page
+| |-titlebar.html                 # Titlebar for every page
 |-index.html                      # Home page
 |-_layouts                        # Theme layouts
 | |-post.html                     # Layout for posts and wiki to show content

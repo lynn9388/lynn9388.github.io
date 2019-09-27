@@ -1,6 +1,6 @@
 ---
 title: Set Up Sublime Text for Markdown and Jekyll
-tags: [markdown, jekyll]
+tags: [Markdown, Jekyll]
 ---
 
 [Sublime Text](https://www.sublimetext.com) might be the first and most used code editor during my undergraduate stage. I have also tried [Atom](https://www.sublimetext.com) when they released the stable version, but I finally gave up after a short trial because it was too slow, especially after installing a lot of packages. After the official release of [Visual Studio Code](https://code.visualstudio.com/), I immediately chose it, it has good performance, easy-to-use extensions, and most importantly, it integrates with Git.

@@ -1,6 +1,6 @@
 ---
 title: Writing with Light Blog
-tags: [jekyll, markdown]
+tags: [Jekyll, Markdown]
 ---
 
 In "[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-getting-started-with-light-blog %})", I have presented how to build a new blog with [Light Blog](https://github.com/lynn9388/light-blog). The next step is how to write a post for it.

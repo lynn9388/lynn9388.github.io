@@ -1,6 +1,6 @@
 ---
 title: Switch Global Proxy Quickly
-tags: network
+tags: [Network, macOS, Windows]
 ---
 
 Unlike the Google Chrome, Safari uses the system proxy by default and does not provide proxy API, so there is no extension like [SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega). Since I set my default browser to Safari, the tool to quickly switch proxy has become a necessary tool for me to access Google.

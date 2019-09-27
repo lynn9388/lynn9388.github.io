@@ -1,6 +1,6 @@
 ---
 title: Access Google
-tags: network
+tags: Network
 ---
 
 Google services are blocked in China which is very inconvenient for researchers. In this post, I will introduce two methods that I used to access Google.
