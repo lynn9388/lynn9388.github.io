@@ -586,7 +586,7 @@ Host 节点通过设置共享存储路径和大小，向网络宣布共享存储
     >
     > 1. 在内网测试中，执行 `./siac host announce` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) Announce() error` 方法，由于 `h.settings.NetAddress` 和 `h.autoAddress` 均返回 `""`，所以不会执行 `h.managedAnnounce(annAddr)`，无法完成宣布过程（不会报错)
     >
-    > 1. 在内网测试中，使用官方提供的源码直接编译的版本，执行 `./siac host announce [address]` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) AnnounceAddress(addr modules.NetAddress) error` 方法，由于测试时提供的是内网地址，执行判断语句 `if addr.IsLocal()` 时无法通过，所以需要注释相关语句，然后通过修改后的源码重新[编译 *siad*](#编译源码)，并上传到相应 Host 节点后，执行 `./siac host announce [address]`
+    > 1. 在内网测试中，使用官方提供的源码直接编译的版本，执行 `./siac host announce [address]` 最终将在 Siad 实例中调用上述源码文件中的 `func (h *Host) AnnounceAddress(addr modules.NetAddress) error` 方法，由于测试时提供的是内网地址，执行判断语句 `if addr.IsLocal()` 时无法通过，所以需要注释相关语句，然后通过修改后的源码重新[编译 siad](#编译源码)，并上传到相应 Host 节点后，执行 `./siac host announce [address]`
     >
     >     ```go
     >     //if addr.IsLocal() {

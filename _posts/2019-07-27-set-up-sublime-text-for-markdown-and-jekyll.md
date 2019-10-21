@@ -87,7 +87,6 @@ After you install them, you need to enable `LiveReload`, just search `LiveReload
 
 You can also configure the settings of `Markdown Preview` in `Sublime Text -> Preferences -> Package Settings -> Markdown Preview -> Settings`, mine is:
 
-
 ```json
 {
     "enabled_parsers": ["github"],

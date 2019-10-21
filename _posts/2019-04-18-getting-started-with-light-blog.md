@@ -49,9 +49,9 @@ To create a blog with this theme, just follow these steps:
 
     - Uncomment `remote_theme: lynn9388/light-blog`
 
-1. [Optional] Add `favicon.ico` to the root directory of the repository if you want to change the blog's icon showed in browser's tab.
+1. (Optional) Add `favicon.ico` to the root directory of the repository if you want to change the blog's icon showed in browser's tab.
 
-1. [Optional] As a convention, you should also add `LICENSE` and `README.md`.
+1. (Optional) As a convention, you should also add `LICENSE` and `README.md`.
 
 That's all. Your blog is done and ready to be published as a GitHub Pages. Now, the blog may look like
 
