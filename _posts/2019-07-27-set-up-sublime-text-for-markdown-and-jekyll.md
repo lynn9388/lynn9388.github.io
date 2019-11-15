@@ -7,6 +7,8 @@ tags: [Markdown, Jekyll]
 
 Visual Studio Code has been working very well all the time, but a week ago, I found that it always caused my computer to be hot, even if I didn't do anything, maybe because it was based on [Electron](https://electronjs.org) (which uses Chromium, that's also why I started to set Safari as my default browser instead of Chrome). Then I started to miss Sublime Text. After I opened its website, I found that it also started to integrate Git 👍, which is exactly what I want.
 
+> I have [switched back to Visual Studio Code]({{ site.baseurl }}{% post_url 2019-11-15-set-up-visual-studio-code-for-markdown-and-jekyll %}).
+
 ## Precondition
 
 After you install [Sublime Text 3](https://www.sublimetext.com/3), you should probably also install [Package Control](https://packagecontrol.io/installation), which makes it easier to manage other packages.
@@ -15,7 +17,7 @@ In the latest version of Sublime Text 3, you only need to click `Tools -> Instal
 
 ## For Markdown
 
-Markdown Text 3 has provided good syntax highlighting for Markdown, but we also need some packages and update the settings to make it more suitable for writing markdown.
+Sublime Text 3 has provided good syntax highlighting for Markdown, but we also need some packages and update the settings to make it more suitable for writing Markdown.
 
 ### Automatic Completion
 
@@ -74,7 +76,7 @@ My setting for `Markdown Lint.sublime-build` (You could change the file name):
 }
 ```
 
-After you set the build system, click `Tools -> Build` in the markdown file you opened to check the markdown format according to the rules you set.
+After you set the build system, click `Tools -> Build` in the Markdown file you opened to check the Markdown format according to the rules you set.
 
 ### Markdown Preview
 
@@ -107,7 +109,7 @@ I write Markdown for my blog, which is powered by [Jekyll](https://jekyllrb.com/
 
 ### Snippets
 
-I said [earlier](#automatic-completion) that syntax of markdown is simple, but it's boring to type [links]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#links) and [multimedia elements]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#multimedia-elements). So I create several snippets in `Tools -> Developer -> New Snippet...`, that let me type in a few keywords and press the `tab` key to type the duplicates for me.
+I said [earlier](#automatic-completion) that syntax of Markdown is simple, but it's boring to type [links]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#links) and [multimedia elements]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#multimedia-elements). So I create several snippets in `Tools -> Developer -> New Snippet...`, that let me type in a few keywords and press the `tab` key to type the duplicates for me.
 
 For example, I create `Markdown Anchor Link.sublime-snippet` to help me type the [image element]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#images):
 
