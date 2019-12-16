@@ -7,7 +7,7 @@ Since I usually use macOS, in some specific situations, such as using the full v
 
 ## Tools
 
-We need a official Windows 10 image (you can find the official download URL from [TechBench by WZT](https://tb.rg-adguard.net/public.php)) and several other tools to rebuild that image.
+We need an official Windows 10 image (you can find the official download URL from [TechBench by WZT](https://tb.rg-adguard.net/public.php)) and several other tools to rebuild that image.
 
 - [Windows 10](https://tb.rg-adguard.net/public.php)
 - [UltraISO](https://www.ultraiso.com)
@@ -34,7 +34,7 @@ If the Windows image contains multiple versions, we can reduce the size of the i
 
     ![Extract install image with Dism++]({{ site.baseurl }}/assets/images/Extract install image with Dism++.png)
 
-1. Replace the original `install.win` with the new extracted small install image in UltraISO using `Actions -> Add Files...`
+1. Replace the original `install.win` with the new extracted small installation image in UltraISO using `Actions -> Add Files...`
 1. Save the Windows image using `File -> Save`
 
 The new image (the first) is a few hundred megabytes smaller than the original image.

@@ -13,7 +13,7 @@ The [CERNET](http://www.edu.cn/) in school provides the IPv6 service, which can 
 
 ### Update Hosts File
 
-The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redirect website access with an IP address. The file location is different between different operating systems. You can copy and paste new hosts file to replace it directly, but I recommend to use an application to manage it, like [SwitchHosts](https://github.com/oldj/SwitchHosts) which provides a user-friendly GUI. Based on your computer's operating system, you can download an install binary in its [here](https://github.com/oldj/SwitchHosts/releases).
+The [`hosts`](https://en.wikipedia.org/wiki/Hosts_(file)) file is used to redirect website access with an IP address. The file location is different between different operating systems. You can copy and paste new hosts file to replace it directly, but I recommend using an application to manage it, like [SwitchHosts](https://github.com/oldj/SwitchHosts) which provides a user-friendly GUI. Based on your computer's operating system, you can download a binary release [here](https://github.com/oldj/SwitchHosts/releases).
 
 After installing the application, you need a new hosts file to update the original one. I use [hosts-ipv6](https://github.com/googlehosts/hosts-ipv6) where the hosts file is [here](https://github.com/googlehosts/hosts-ipv6/blob/master/hosts-files/hosts), but what you need to do is copy the URL of the raw file (`https://raw.githubusercontent.com/googlehosts/hosts-ipv6/master/hosts-files/hosts`) and apply it as a remote hosts, then enable it.
 
@@ -36,7 +36,8 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
 ### Deploy Shadowsocks Server
 
 1. Create a free Heroku account [here](https://signup.heroku.com/) if you don't have one.
-1. Deploy server [here](https://heroku.com/deploy?template=https://github.com/onplus/shadowsocks-heroku/tree/re), an example is set as below
+1. Deploy server [here](https://heroku.com/deploy?template=https://github.com/onplus/shadowsocks-heroku/tree/re), an example is set as below:
+
     - App name: `lynn-example`
         - any valid name is ok
     - Choose a region: `United States`
@@ -49,7 +50,7 @@ The method that I introduced above is quite easy and fast, but it requests IPv6 
 ### Configure Local Client
 
 1. Download the local client [here](https://github.com/onplus/shadowsocks-heroku/releases) based on your computer's operating system.
-1. Configure `config.json` based on your server's settings, below is a example
+1. Configure `config.json` based on your server's settings, below is an example:
 
     ```json
     {
@@ -70,7 +71,7 @@ After finishing the above steps, you need to launch the local client when you wa
 
 ### Configure Proxy
 
-It's time to configure proxy for the applications. As you can see in `config.json`, the proxy configuration is pretty clear which should be configured in other applications as below
+It's time to configure proxy for the applications. As you can see in `config.json`, the proxy configuration is pretty clear which should be configured in other applications as below:
 
 - Protocol: `SOCKS5`
 - IP: `127.0.0.1`

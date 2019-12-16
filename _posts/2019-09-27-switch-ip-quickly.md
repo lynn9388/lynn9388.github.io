@@ -13,7 +13,7 @@ macOS supports saving multiple network settings for different locations. You can
 
 ### Add New Locations
 
-You just need to click `Location -> Edit Locations... -> +`, and set a name for the untitled new location. For example, I set two locations, `Automatic` and `lab`. The former uses the default network settings to enable Wi-Fi to automatically obtain IP, while the latter will set a static IP, which allows me to access resources on th LAN.
+You just need to click `Location -> Edit Locations... -> +`, and set a name for the untitled new location. For example, I set two locations, `Automatic` and `lab`. The former uses the default network settings to enable Wi-Fi to automatically obtain IP, while the latter will set a static IP, which allows me to access resources on the LAN.
 
 ![Add a new location for network]({{ site.baseurl }}/assets/images/Add a new location for network.png)
 
@@ -132,4 +132,4 @@ BTW, you can avoid manually select `Run as administrator` from context menu by f
 1. Check `Run as administrator` in the pop-up window
 1. Save and close pop-up windows
 
-After that, you only need to double click the shortcut to run the batch file as administrator. Enjoy!😃
+After that, you only need to double-click the shortcut to run the batch file as administrator. Enjoy!😃

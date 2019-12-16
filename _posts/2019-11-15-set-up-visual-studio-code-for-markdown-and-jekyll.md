@@ -25,7 +25,7 @@ After installation, you only need to set the rules in the Visual Studio Code's `
 
 ## Snippets for Jekyll
 
-Visual Studio Code also supports [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets). Sice I put all my Jekyll projects under the `Blog` folder, I create a folder snippets through `Code -> Preferences -> User Snippets -> New Snippets file for 'Blog'...`, it's located in `/Blog/.vscode/markdown.code-snippets`.
+Visual Studio Code also supports [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets). Since I put all my Jekyll projects under the `Blog` folder, I create a folder snippets through `Code -> Preferences -> User Snippets -> New Snippets file for 'Blog'...`, it's located in `/Blog/.vscode/markdown.code-snippets`.
 
 ```json
 {% raw %}{

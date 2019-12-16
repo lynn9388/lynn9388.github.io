@@ -7,7 +7,7 @@ In "[Getting Started with Light Blog]({{ site.baseurl }}{% post_url 2019-04-18-g
 
 ## Chose an Editor
 
-The post in website based on Jekyll is typically written with Markdown, which is just a lightweight markup language with plain text formatting syntax. That means you can write it with any text editor like [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com), and [Atom](https://atom.io), but I recommend [Visual Studio Code](https://code.visualstudio.com/) (aka VSCode).
+The post in website based on Jekyll is typically written with Markdown, which is just a lightweight markup language with plain text formatting syntax. That means you can write it with any text editor like [Notepad++](https://notepad-plus-plus.org), [Sublime Text](https://www.sublimetext.com), and [Atom](https://atom.io), but I recommend [Visual Studio Code](https://code.visualstudio.com/) (aka VS Code).
 
 > I have switched to [Sublime Text]({{ site.baseurl }}{% post_url 2019-07-27-set-up-sublime-text-for-markdown-and-jekyll %}).
 >
@@ -15,7 +15,7 @@ The post in website based on Jekyll is typically written with Markdown, which is
 
 ### Extensions
 
-The main reason I recommend VSCode is to have an active community that develops a number of extensions to extend its capabilities. Here are some of the extensions I used for Markdown.
+The main reason I recommend VS Code is to have an active community that develops a number of extensions to extend its capabilities. Here are some extensions I used for Markdown.
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
@@ -30,19 +30,19 @@ To create a post, add a file to your `_posts` directory with the following forma
 YEAR-MONTH-DAY-name-of-post.md
 ```
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit umbers. For example, the following are examples of valid post filenames:
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers. For example, the following are examples of valid post filenames:
 
 ```bash
 2019-04-18-getting-started-with-light-blog.md
 2019-07-19-writing-with-light-blog.md
 ```
 
-All blog post files must begin with [front matter](https://jekyllrb.com/docs/front-matter/) which is typically used to set a [layout](https://jekyllrb.com/docs/layouts/) or other meta data. So far the [Light Blog](https://github.com/lynn9388/light-blog) supports `title` and `tags` variables, and only `title` is required for every posts. For example, the post you are reading now is like this:
+All blog post files must begin with [front matter](https://jekyllrb.com/docs/front-matter/) which is typically used to set a [layout](https://jekyllrb.com/docs/layouts/) or other metadata. So far the [Light Blog](https://github.com/lynn9388/light-blog) supports `title` and `tags` variables, and only `title` is required for every post. For example, the post you are reading now is like this:
 
 ```markdown
 ---
 title: Writing with Light Blog
-tags: [jekyll, markdown]
+tags: [Jekyll, Markdown]
 ---
 
 More content here.

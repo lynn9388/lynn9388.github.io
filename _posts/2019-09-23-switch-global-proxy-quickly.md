@@ -15,15 +15,15 @@ I use [SpechtLite](https://github.com/zhuhaow/SpechtLite).
 
 Just download the zip file from [here](https://github.com/zhuhaow/SpechtLite/releases), then move the unzipped application into `Applications` folder.
 
-![Move SpechLite into Applications folder]({{ site.baseurl }}/assets/images/Move SpechLite into Applications folder.png)
+![Move SpechtLite into Applications folder]({{ site.baseurl }}/assets/images/Move SpechtLite into Applications folder.png)
 
 ### Configure Proxy Server
 
-Before you start using it, you need to add a configure file (Filename can be set freely) into the profile folder (`.SpechtLite` folder within the root directory), which is `/Users/lynn/.SpechtLite` for my Mac.
+Before you start using it, you need to add a configuration file (Filename can be set freely) into the profile folder (`.SpechtLite` folder within the root directory), which is `/Users/lynn/.SpechtLite` for my Mac.
 
-![Add SpechLite configuration file]({{ site.baseurl }}/assets/images/Add SpechLite configuration file.png)
+![Add SpechtLite configuration file]({{ site.baseurl }}/assets/images/Add SpechtLite configuration file.png)
 
-You could configure your own proxy server according to the [demo configuration file](https://github.com/zhuhaow/SpechtLite#configuration-file). But if you follow my settings for [Shadowsocks local client]({{ site.baseurl }}{% post_url 2019-05-13-access-google %}#configure-local-client), you can configure it like this
+You could configure your own proxy server according to the [demo configuration file](https://github.com/zhuhaow/SpechtLite#configuration-file). But if you follow my settings for [Shadowsocks local client]({{ site.baseurl }}{% post_url 2019-05-13-access-google %}#configure-local-client), you can configure it like this:
 
 ```yaml
 port: 9090

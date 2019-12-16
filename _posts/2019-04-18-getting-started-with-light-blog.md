@@ -45,7 +45,7 @@ To create a blog with this theme, just follow these steps:
 
     You may also want to copy `.gitignore` to ignore temporary Jekyll files.
 
-1. Update `_config.yml` with your own settings. The most important settings are
+1. Update `_config.yml` with your own settings. The most important settings is
 
     - Uncomment `remote_theme: lynn9388/light-blog`
 
@@ -80,7 +80,7 @@ After you create a blog locally, you can follow these step to publish in GitHub 
 
 ### Add Content
 
-Light Blog supports the normal post and wiki post. The last one is for common knowledge and doesn't need a date. What you need to do is create two folders named `_posts` and `_wiki` for the first time, and put your content to the relevant folder when you want to add content to your blog. The filename of normal post should follow the convention `YYYY-MM-DD-name-of-post.md` which contains the date of your post, so you don't need put the date in front matter.
+Light Blog supports the normal post and wiki post. The last one is for common knowledge and doesn't need a date. What you need to do is create two folders named `_posts` and `_wiki` for the first time, and put your content to the relevant folder when you want to add content to your blog. The filename of normal post should follow the convention `YYYY-MM-DD-name-of-post.md` which contains the date of your post, so you don't need to put the date in front matter.
 
 As an example of a blog's directory structure, your blog may look like
 
@@ -108,7 +108,7 @@ lynn9388.github.io/
 
 ## Customization
 
-When you set light-blog as a remote theme in your site, your site doesn't have the theme files, but Jekyll will use the default layouts, includes, and stylesheets of light-blog to build your site. However, you can override any of the theme defaults with your own content.
+When you set light-blog as a remote theme in your site, your site doesn't have the theme files, but Jekyll will use the default layouts, includes, and style sheets of light-blog to build your site. However, you can override any of the theme defaults with your own content.
 
 ### Directory Structure
 
