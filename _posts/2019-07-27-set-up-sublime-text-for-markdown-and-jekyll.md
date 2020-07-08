@@ -21,7 +21,7 @@ Sublime Text 3 has provided good syntax highlighting for Markdown, but we also n
 
 ### Automatic Completion
 
-I have introduced the [syntax of Markdown]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#add-more-content), which is pretty simple, so in fact, you can use the built-in automatic completion function directly. But if you want more advanced features, you can try [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing), I have tried it, but I don't like it.
+I have introduced the [syntax of Markdown](https://lynn9388.github.io/light-blog/2019/07/19/writing-with-light-blog.html#add-more-content), which is pretty simple, so in fact, you can use the built-in automatic completion function directly. But if you want more advanced features, you can try [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing), I have tried it, but I don't like it.
 
 ### Markdown Linting
 
@@ -109,9 +109,9 @@ I write Markdown for my blog, which is powered by [Jekyll](https://jekyllrb.com/
 
 ### Snippets
 
-I said [earlier](#automatic-completion) that syntax of Markdown is simple, but it's boring to type [links]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#links) and [multimedia elements]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#multimedia-elements). So I create several snippets in `Tools -> Developer -> New Snippet...`, that let me type in a few keywords and press the `tab` key to type the duplicates for me.
+I said [earlier](#automatic-completion) that syntax of Markdown is simple, but it's boring to type [links](https://lynn9388.github.io/light-blog/2019/07/19/writing-with-light-blog.html#links) and [multimedia elements](https://lynn9388.github.io/light-blog/2019/07/19/writing-with-light-blog.html#multimedia-elements). So I create several snippets in `Tools -> Developer -> New Snippet...`, that let me type in a few keywords and press the `tab` key to type the duplicates for me.
 
-For example, I create `Markdown Anchor Link.sublime-snippet` to help me type the [image element]({{ site.baseurl }}{% post_url 2019-07-19-writing-with-light-blog %}#images):
+For example, I create `Markdown Anchor Link.sublime-snippet` to help me type the [image element](https://lynn9388.github.io/light-blog/2019/07/19/writing-with-light-blog.html#images):
 
 ```xml
 <snippet>
