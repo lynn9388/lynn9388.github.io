@@ -1,9 +1,11 @@
 ---
+layout: page
 title: About
-permalink: /about/
+description: 要有最柔软温和的心
+header_img: /assets/img/about.jpeg
 ---
 
-Hi there! I'm Lynn. This website is my personal blog powered by [Jekyll](https://jekyllrb.com/) and [light-blog](https://github.com/lynn9388/light-blog).
+Hi there! I'm Lynn. This website is my personal blog powered by [Jekyll](https://jekyllrb.com/) and [Huxpro](https://github.com/lynn9388/huxpro).
 
 ### Hobbies
 
