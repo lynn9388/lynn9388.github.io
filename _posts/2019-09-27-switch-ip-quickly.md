@@ -9,19 +9,19 @@ I usually need to access different networks through different network settings, 
 
 macOS supports saving multiple network settings for different locations. You can see the settings in `System Preferences -> Network -> Location`.
 
-![Network settings for different locations]({{ site.baseurl }}/assets/images/Network settings for different locations.png)
+![Network settings for different locations](https://lynn9388.github.io/images/post/Network_settings_for_different_locations.png)
 
 ### Add New Locations
 
 You just need to click `Location -> Edit Locations... -> +`, and set a name for the untitled new location. For example, I set two locations, `Automatic` and `lab`. The former uses the default network settings to enable Wi-Fi to automatically obtain IP, while the latter will set a static IP, which allows me to access resources on the LAN.
 
-![Add a new location for network]({{ site.baseurl }}/assets/images/Add a new location for network.png)
+![Add a new location for network](https://lynn9388.github.io/images/post/Add_a_new_location_for_network.png)
 
 ### Switch Locations
 
 After you add a new network, you will find a new option in the menu of the Apple logo in the upper left corner of the screen. All you need to do is switch between different locations when you need to change the IP quickly.
 
-![Change IP quickly by switching locations]({{ site.baseurl }}/assets/images/Change IP quickly by switching locations.png)
+![Change IP quickly by switching locations](https://lynn9388.github.io/images/post/Change_IP_quickly_by_switching_locations.png)
 
 ## For Windows
 

@@ -15,13 +15,13 @@ I use [SpechtLite](https://github.com/zhuhaow/SpechtLite).
 
 Just download the zip file from [here](https://github.com/zhuhaow/SpechtLite/releases), then move the unzipped application into `Applications` folder.
 
-![Move SpechtLite into Applications folder]({{ site.baseurl }}/assets/images/Move SpechtLite into Applications folder.png)
+![Move SpechtLite into Applications folder](https://lynn9388.github.io/images/post/Move_SpechtLite_into_Applications_folder.png)
 
 ### Configure Proxy Server
 
 Before you start using it, you need to add a configuration file (Filename can be set freely) into the profile folder (`.SpechtLite` folder within the root directory), which is `/Users/lynn/.SpechtLite` for my Mac.
 
-![Add SpechtLite configuration file]({{ site.baseurl }}/assets/images/Add SpechtLite configuration file.png)
+![Add SpechtLite configuration file](https://lynn9388.github.io/images/post/Add_SpechtLite_configuration_file.png)
 
 You could configure your own proxy server according to the [demo configuration file](https://github.com/zhuhaow/SpechtLite#configuration-file). But if you follow my settings for [Shadowsocks local client]({{ site.baseurl }}{% post_url 2019-05-13-access-google %}#configure-local-client), you can configure it like this:
 
@@ -62,7 +62,7 @@ You should already have the first tool, so you only need to download the last tw
 
 After you download [glider](https://github.com/nadoo/glider/releases), you can see a command line tool called `glider.exe`.
 
-![Forward proxy tool glider]({{ site.baseurl }}/assets/images/Forward proxy tool glider.png)
+![Forward proxy tool glider](https://lynn9388.github.io/images/post/Forward_proxy_tool_glider.png)
 
 To launch `glider`, you only need to run the following command in the `Command Prompt` after launching `shadowsocks-heroku local client`
 
@@ -70,7 +70,7 @@ To launch `glider`, you only need to run the following command in the `Command P
 glider -listen ss://CHACHA20-IETF:PASSWORD@:8388 -forward socks5://127.0.0.1:1090 -verbose
 ```
 
-![Convert Socks5 to Shadowsocks with glider]({{ site.baseurl }}/assets/images/Convert Socks5 to Shadowsocks with glider.png)
+![Convert Socks5 to Shadowsocks with glider](https://lynn9388.github.io/images/post/Convert_Socks5_to_Shadowsocks_with_glider.png)
 
 But you can also create a batch file (named as `start.bat`) next to the `glider.exe`, just run that file when you want to launch `glider`, without having to manually enter the command each time.
 
@@ -86,7 +86,7 @@ glider -listen ss://CHACHA20-IETF:PASSWORD@:8388 -forward socks5://127.0.0.1:109
 
 The last thing before you start the global proxy is to add the Shadowsocks proxy server provided by `glider` to `Shadowsocks for Windows`. You need to right click on the icon after launching `Shadowsocks for Windows`, then click `Servers -> Edit Servers...`
 
-![Configure server for Shadowsocks]({{ site.baseurl }}/assets/images/Configure server for Shadowsocks.png)
+![Configure server for Shadowsocks](https://lynn9388.github.io/images/post/Configure_server_for_Shadowsocks.png)
 
 ### Set Global Proxy
 

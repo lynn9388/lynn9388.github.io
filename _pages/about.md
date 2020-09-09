@@ -14,11 +14,11 @@ I like photography, baking, running, and of course programming. 🙂
 <div id="photography-container">
     {%- for image in site.static_files reversed -%}
         {%- if image.path contains "images/photography" -%}
-    <a href="https://gitcdn.link/repo/lynn9388/images/master/photography/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
+    <a href="https://lynn9388.github.io/images/photography/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
         {%- endif -%}
 
         {%- if image.path contains "images/baking" -%}
-    <a href="https://gitcdn.link/repo/lynn9388/images/master/baking/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
+    <a href="https://lynn9388.github.io/images/baking/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
         {%- endif -%}
     {%- endfor -%}
 </div>
@@ -29,7 +29,7 @@ Here are some of my certificates of completion.
     {%- for image in site.static_files reversed -%}
         {%- if image.path contains "images/running" -%}
     <div style="flex: 0 0 auto; padding-right: 20px">
-        <a href="https://gitcdn.link/repo/lynn9388/images/master/running/{{ image.name }}" data-fancybox="running-gallery"><img src="{{ image.path }}" height="200"></a>
+        <a href="https://lynn9388.github.io/images/running/{{ image.name }}" data-fancybox="running-gallery"><img src="{{ image.path }}" height="200"></a>
     </div>
         {%- endif -%}
     {%- endfor -%}

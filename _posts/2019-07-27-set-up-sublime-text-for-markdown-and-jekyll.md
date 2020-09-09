@@ -98,7 +98,7 @@ You can also configure the settings of `Markdown Preview` in `Sublime Text -> Pr
 
 When you want to preview a Markdown file, just search `Markdown Preview: Preview in Browser` in `Command Palette`, and it will show like this:
 
-![Markdown preview for Sublime Text]({{ site.baseurl }}/assets/images/Markdown preview for Sublime Text.png)
+![Markdown preview for Sublime Text](https://lynn9388.github.io/images/post/Markdown_preview_for_Sublime_Text.png)
 
 ## For Jekyll
 
@@ -127,7 +127,7 @@ For example, I create `Markdown Anchor Link.sublime-snippet` to help me type the
 
 After I add it, I can insert an image like this:
 
-![Automatic completion with sublime text snippets]({{ site.baseurl }}/assets/images/Automatic completion with sublime text snippets.gif)
+![Automatic completion with sublime text snippets](https://lynn9388.github.io/images/post/Automatic_completion_with_sublime_text_snippets.gif)
 
 ### Jekyll
 

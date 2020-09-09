@@ -14,7 +14,7 @@ We need an official Windows 10 image (you can find the official download URL fro
 - [Dism++](http://www.chuyu.me/en/index.html)
 - [MSMG Toolkit](https://msmgtoolkit.in/download.html)
 
-![Windows 10 image and other tools]({{ site.baseurl }}/assets/images/Windows 10 image and other tools.png)
+![Windows 10 image and other tools](https://lynn9388.github.io/images/post/Windows_10_image_and_other_tools.png)
 
 ## Rebuild Windows 10 Image
 
@@ -27,19 +27,19 @@ If the Windows image contains multiple versions, we can reduce the size of the i
 1. Open the Windows ISO image from UltraISO using `File -> Open...`
 1. Extract `install.win` from `sources` folder using `Extract To...`
 
-    ![Extract install image with UltraISO]({{ site.baseurl }}/assets/images/Extract install image with UltraISO.png)
+    ![Extract install image with UltraISO](https://lynn9388.github.io/images/post/Extract_install_image_with_UltraISO.png)
 
 1. Open `install.win` from Dism++ using `File -> Open Image File`
 1. Extract the smallest image using `Export image` (Choose `Max` in `Save as type`)
 
-    ![Extract install image with Dism++]({{ site.baseurl }}/assets/images/Extract install image with Dism++.png)
+    ![Extract install image with Dism++](https://lynn9388.github.io/images/post/Extract_install_image_with_Dism++.png)
 
 1. Replace the original `install.win` with the new extracted small installation image in UltraISO using `Actions -> Add Files...`
 1. Save the Windows image using `File -> Save`
 
 The new image (the first) is a few hundred megabytes smaller than the original image.
 
-![Size comparison after removing redundant Windows versions]({{ site.baseurl }}/assets/images/Size comparison after removing redundant Windows versions.png)
+![Size comparison after removing redundant Windows versions](https://lynn9388.github.io/images/post/Size_comparison_after_removing_redundant_Windows_versions.png)
 
 ### Remove Redundant Windows Components
 
@@ -61,22 +61,22 @@ Next, we need to remove the extra Windows components to further reduce the stora
 
 You will find the new ISO image (the second) in ToolKit's `ISO` folder which is much smaller than the original image (the third).
 
-![Size comparison after removing redundant Windows components]({{ site.baseurl }}/assets/images/Size comparison after removing redundant Windows components.png)
+![Size comparison after removing redundant Windows components](https://lynn9388.github.io/images/post/Size_comparison_after_removing_redundant_Windows_components.png)
 
 ## Test in VM
 
 I create two virtual machines with the original image and the new lite image, then compare their resource usage. I choose `Windows 10 Home N` for the original version of Windows 10 virtual machine which is the same Windows version in the lite image.
 
-![Choose Windows version during installation]({{ site.baseurl }}/assets/images/Choose Windows version during installation.png)
+![Choose Windows version during installation](https://lynn9388.github.io/images/post/Choose_Windows_version_during_installation.png)
 
 ### Result
 
 We can see from the picture below that virtual machines created with the lite image take up less storage and use less memory at runtime.
 
-![Resource usage comparison between original Windows and lite Windows]({{ site.baseurl }}/assets/images/Resource usage comparison between original Windows and lite Windows.png)
+![Resource usage comparison between original Windows and lite Windows](https://lynn9388.github.io/images/post/Resource_usage_comparison_between_original_Windows_and_lite_Windows.png)
 
 This is mainly because the system only contains the necessary system applications.
 
-![Apps number comparison between original Windows and lite Windows]({{ site.baseurl }}/assets/images/Apps number comparison between original Windows and lite Windows.png)
+![Apps number comparison between original Windows and lite Windows](https://lynn9388.github.io/images/post/Apps_number_comparison_between_original_Windows_and_lite_Windows.png)
 
 As you can see from the comparison, the lite virtual machine is indeed lighter and certainly faster.
