@@ -14,15 +14,11 @@ I like photography, baking, running, and of course programming. 🙂
 <div id="photography-container">
     {%- for image in site.static_files reversed -%}
         {%- if image.path contains "images/photography" -%}
-            {%- unless image.path contains "thumbnails" -%}
-    <a href="{{ image.path }}" data-fancybox="photography-gallery"><img src="{{ site.baseurl }}/assets/images/photography/thumbnails/{{ image.name }}"></a>
-            {%- endunless -%}
+    <a href="https://gitcdn.link/repo/lynn9388/images/master/photography/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
         {%- endif -%}
 
         {%- if image.path contains "images/baking" -%}
-            {%- unless image.path contains "thumbnails" -%}
-                <a href="{{ image.path }}" data-fancybox="photography-gallery"><img src="{{ site.baseurl }}/assets/images/baking/thumbnails/{{ image.name }}"></a>
-            {%- endunless -%}
+    <a href="https://gitcdn.link/repo/lynn9388/images/master/baking/{{ image.name }}" data-fancybox="photography-gallery"><img src="{{ image.path }}"></a>
         {%- endif -%}
     {%- endfor -%}
 </div>
@@ -32,11 +28,9 @@ Here are some of my certificates of completion.
 <div style="display: flex; flex-wrap: nowrap; overflow-x: auto">
     {%- for image in site.static_files reversed -%}
         {%- if image.path contains "images/running" -%}
-            {%- unless image.path contains "thumbnails" -%}
     <div style="flex: 0 0 auto; padding-right: 20px">
-        <a href="{{ image.path }}" data-fancybox="running-gallery"><img src="{{ site.baseurl }}/assets/images/running/thumbnails/{{ image.name }}" height="200"/></a>
+        <a href="https://gitcdn.link/repo/lynn9388/images/master/running/{{ image.name }}" data-fancybox="running-gallery"><img src="{{ image.path }}" height="200"></a>
     </div>
-            {%- endunless -%}
         {%- endif -%}
     {%- endfor -%}
 </div>
@@ -49,15 +43,15 @@ Here are some of my certificates of completion.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
 
 <script>
-    window.onresize = function() {
+    $(window).on("resize",function() {
         var containerWidth = $("#photography-container").width();
         var imageWidth = containerWidth / Math.ceil(containerWidth / 80);
         $("#photography-container").find("img").each(function(i, image) {
             image.width = imageWidth;
         });
-    };
+    }).trigger("resize");
 
-    $('[data-fancybox="photography-gallery"], [data-fancybox="running-gallery"]').fancybox({
+    $("[data-fancybox='photography-gallery'], [data-fancybox='running-gallery']").fancybox({
         arrows: false,
         transitionEffect: "slide",
         buttons : [],
